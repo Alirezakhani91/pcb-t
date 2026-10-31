@@ -63,3 +63,212 @@
 
 .v14-hero-light{position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(480px circle at var(--v14-pointer-x,58%) var(--v14-pointer-y,54%),rgba(255,255,255,.035),transparent 77%);mix-blend-mode:screen}
 .v14-artistry .art-directed-hero::before{display:none!important;content:none!important}
+
+
+/* ==========================================================
+   PCB&T V16 — MOBILE TYPOGRAPHY & CENTERED EDITORIAL LAYOUT
+   Mobile-only rules. Desktop and tablet >=768px are unchanged.
+   ========================================================== */
+@media screen and (max-width: 767px) {
+  :root { --mobile-ink: #172633; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-size: 15px; line-height: 1.58; text-align: center; }
+  .container { width: calc(100% - 40px); max-width: 560px; margin-inline: auto; }
+  .section-pad { padding-top: 54px; padding-bottom: 54px; }
+  .overline, .overline.on-dark, .overline.teal { font-size: 10px; letter-spacing: .14em; line-height: 1.5; text-align: center; }
+
+  /* Headings: noticeably smaller, centered, with natural wrapping. */
+  h1,h2,h3,h4,h5,h6 { text-align:center; letter-spacing: -.035em; line-height: 1.12; overflow-wrap:normal; }
+  p,li,blockquote { font-size: 15px; line-height: 1.6; text-align: center; }
+  .hero h1, .page-hero.hero-photo h1, .page-hero.hero-photo h1 em,
+  .page-hero h1 {
+    font-size: clamp(34px, 9vw, 43px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.045em !important;
+    text-align:center !important;
+    max-width: 100% !important;
+    margin: 17px auto 21px !important;
+    text-wrap: balance;
+    overflow-wrap:break-word;
+  }
+  .hero h1 br { display: initial; }
+  .home-services-head h2, .home-how-head h2, .home-final h2,
+  .section-title,.opening h2,.editorial-layout h2,.feature-photo-text h2,
+  .industry-layout h2,.cta-inner h2,.lead-spread h2,.contact-intro h2,
+  .quiet-photo h2,.wide-editorial h2,.editorial-band-copy h2,
+  .article-copy h2,.full-editorial-overlay h2,
+  .section-heading h2,.difference-columns h3 {
+    font-size: clamp(29px, 7.8vw, 36px) !important;
+    line-height:1.12 !important;
+    letter-spacing:-.04em;
+    text-align:center !important;
+    max-width:100% !important;
+    margin-inline:auto;
+    text-wrap:balance;
+  }
+  .directory-row h2,.philosophy-line h3,.list-line p,.related-link,
+  .home-step h3,.process-grid h3,.editorial-band-card p,
+  .minimal-row h3,.contact-intro h3,.article-aside h3 {
+    font-size:clamp(21px,6vw,27px)!important;
+    line-height:1.2;
+    text-align:center!important;
+    overflow-wrap:anywhere;
+  }
+  .hero-support p,.page-hero-bottom p,.page-hero.hero-photo .page-hero-bottom p,
+  .home-services-head>p,.home-step p,.home-final-action p,
+  .opening p,.editorial-layout p,.editorial-band-copy p,
+  .section-heading>p,.contact-intro>p,.feature-photo-text>p,
+  .article-copy,.article-copy p,.form-helper,.directory-row p,
+  .philosophy-line p,.cta-bottom p,.row-meta {
+    font-size: 15px !important;
+    line-height:1.6!important;
+    text-align:center!important;
+    max-width:100%!important;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* Shared actions: horizontally centered, but remain easy to tap. */
+  .pill,.pill-light,.pill-dark,.nav-cta,.text-arrow,.home-quiet-link,
+  .nav-preview-cta { font-size: 14px !important; }
+  .pill,.pill-light,.pill-dark { margin-inline:auto; min-height:46px; padding:12px 22px; gap:18px; white-space:normal; text-align:center; justify-content:center; }
+  .text-arrow,.home-quiet-link { margin-inline:auto; justify-content:center; text-align:center; gap:13px; }
+  .hero-support,.page-hero-bottom,.home-final-action,.cta-bottom,
+  .home-services-outro,.section-heading,.home-services-head,
+  .home-final-inner,.home-how-head,.opening-layout,.opening-copy,
+  .lead-spread .editorial-layout,.editorial-layout,.industry-layout,
+  .feature-photo-text,.quiet-photo>.container { text-align:center; justify-items:center; align-items:center; }
+  .home-services-outro { flex-direction: column; gap:12px; }
+
+  /* Photo heroes: reduce top/bottom whitespace and center content. */
+  .hero { min-height: min(730px, 91svh); align-items:center; }
+  .hero-content {
+    width:calc(100% - 40px);
+    max-width:560px;
+    padding-top: 115px!important;
+    padding-bottom: 110px!important;
+    margin-inline:auto;
+    text-align:center;
+  }
+  .hero-support { display:flex; flex-direction:column; align-items:center!important; gap:19px; max-width:100%; }
+  .hero-scroll { left:0; right:0; bottom:23px; width:100%; text-align:center; font-size:9px; }
+  .page-hero.hero-photo {
+    min-height: min(740px, 90svh);
+    padding: 145px 0 78px !important;
+    align-items:center;
+  }
+  .page-hero.hero-photo>.container,.page-hero.hero-photo .container {
+    position:relative; z-index:3; text-align:center;
+  }
+  .page-hero.hero-photo .page-hero-bottom { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; max-width:100%; }
+  .page-hero.hero-photo .page-hero-bottom p { margin-bottom:0!important; }
+  .page-hero.hero-photo .overline { margin-inline:auto; }
+  .page-hero.hero-photo .pill { justify-content:center; }
+  .art-directed-hero .v14-hero-metadata {display:none;}
+  .homepage .authentic-hero-logo { width:86px; right:10px; bottom:54px; }
+
+  /* Homepage: compact, balanced narrative with centered rows. */
+  .home-services,.home-how,.home-final { padding-block:60px!important; }
+  .home-services-head,.home-final-inner { display:grid;grid-template-columns:1fr;gap:18px; }
+  .home-services-head h2,.home-how-head h2,.home-final h2 {margin:12px auto 20px!important;}
+  .home-services-head>p { margin-top:5px!important; }
+  .home-service-list { margin-top:25px; }
+  .home-service-row { grid-template-columns:22px minmax(0,1fr) 18px; gap:7px; padding:20px 0; text-align:center; }
+  .home-service-row .home-service-name { font-size: clamp(20px,5.6vw,24px) !important;line-height:1.2; text-align:center; }
+  .home-service-index { font-size:11px; }
+  .home-service-arrow { font-size:19px; }
+  .home-steps { grid-template-columns:1fr; gap:22px; margin:30px 0 25px; }
+  .home-step { text-align:center; padding-top:20px; }
+  .home-step h3 { margin:12px 0 10px!important; }
+  .home-step p {margin-bottom:0;}
+  .home-final-inner { padding:0!important; }
+  .home-final-action { width:100%; display:flex; flex-direction:column;align-items:center; }
+  .home-final-action p { margin:0 auto 20px!important; }
+  .home-final .authentic-cta-logo { margin:0 auto 22px; width:112px; }
+  .v14-process-line { opacity:.16; }
+
+  /* Inner-page layouts: center the editorial content without crushing columns. */
+  .lead-spread .editorial-layout,.editorial-layout,.contact-layout,
+  .article-grid,.editorial-band-inner,.industry-layout,.section-heading,
+  .difference-header,.difference-columns,.feature-photo,
+  .wide-editorial,.philosophy-line,.quiet-photo>.container,
+  .home-footer-inner { grid-template-columns:1fr!important; }
+  .editorial-band {padding-top:24px;}
+  .editorial-band-inner {gap:0;border-radius:20px;}
+  .editorial-band-copy {padding:28px 22px;}
+  .editorial-band-copy h2 {margin:13px auto 17px;}
+  .editorial-band-grid {width:100%;}
+  .editorial-band-card {padding:20px 15px; display:flex; flex-direction:column; align-items:center;gap:10px;}
+  .editorial-band-card p {font-size:20px!important;margin:0;max-width:100%;}
+  .lead-spread .editorial-layout {gap:20px;}
+  .lead-spread .editorial-layout>* {max-width:100%;}
+  .clean-list,.directory-list,.minimal-rows,.related-links {margin-top:24px;}
+  .list-line,.philosophy-line,.directory-row {
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;
+    padding:24px 4px; text-align:center;
+  }
+  .list-line>span,.philosophy-line>span,.directory-row>span:first-child {font-size:11px;}
+  .directory-row h2,.philosophy-line h3 {margin:0 auto 10px;}
+  .directory-row p,.philosophy-line p {margin:0 auto;}
+  .minimal-row {grid-template-columns:18px minmax(0,1fr) 18px;gap:8px;text-align:center;}
+  .minimal-row h3 {font-size:21px!important;}
+  .related-link,.industry-links a {justify-content:center;font-size:21px!important;gap:15px;}
+  .related-link .arrow {margin-left:0;}
+  .article-grid {gap:34px;}
+  .article-copy {font-size:15px;}
+  .article-copy h2 {margin:34px auto 18px!important;}
+  .article-copy ul,.article-copy ol {padding-inline:22px;}
+  .article-copy li {font-size:15px;text-align:center;}
+  .article-aside {position:static;text-align:center;}
+  .article-aside .aside-link {font-size:15px;}
+  .wide-editorial img {height:270px;min-height:270px;}
+  .wide-editorial>div {padding:30px 22px;}
+  .section-heading {gap:15px;}
+
+  /* Contact page: centered presentation, clear and usable form. */
+  .contact-layout {gap:42px;}
+  .contact-intro>p {margin-inline:auto;}
+  .contact-lines {margin-top:30px;}
+  .contact-lines>div {align-items:center;text-align:center;padding:19px 0;}
+  .contact-lines a,.contact-lines strong {font-size:17px!important;text-align:center;overflow-wrap:anywhere;}
+  .contact-form {text-align:center;width:100%;}
+  .form-intro {font-size:11px;}
+  .contact-field label {font-size:14px;text-align:center;}
+  .contact-field input,.contact-field select,.contact-field textarea {
+    font-size:16px;text-align:center;width:100%;padding:12px 5px;
+  }
+  .contact-field textarea {min-height:130px;}
+  .form-helper {font-size:13px!important;}
+  .contact-form button {margin-inline:auto;}
+
+  /* Header/menu: preserve brand lockup and toggle arrangement. */
+  .navigation {height:68px;}
+  .logo-lockup {font-size:22px;gap:8px;text-align:left;}
+  .logo-lockup img {width:34px;height:34px;}
+  .menu-toggle {font-size:14px;margin-left:auto;}
+  .mobile-menu {align-items:stretch;text-align:center;padding:16px 20px 26px;}
+  .mobile-menu a {font-size:19px;text-align:center;padding:11px 0;}
+  .home-footer-brand,.home-footer-links,.home-footer-contact,.footer-message,.footer-column,.footer-main,.footer-bottom,.home-footer-bottom {text-align:center;justify-items:center;justify-content:center;align-items:center;}
+  .home-footer-brand>span {font-size:26px;}
+  .home-footer-links {justify-items:center;}
+  .home-footer-links a,.home-footer-contact a,.footer-column a {font-size:14px;}
+  .home-footer-contact a {overflow-wrap:anywhere;}
+  .home-footer-bottom {display:flex;flex-direction:column;gap:7px;}
+  .home-footer-bottom small {font-size:12px;}
+}
+
+/* Finish the mobile-only type scale: the shared footer headline is not part of main. */
+@media screen and (max-width:767px){
+  .footer-message h2,.footer-message h2 em,
+  .footer h2,.footer h2 em{
+    font-size:clamp(29px,7.8vw,36px)!important;
+    line-height:1.12!important;
+    text-align:center!important;
+    letter-spacing:-.04em;
+    margin-inline:auto;
+    text-wrap:balance;
+  }
+  .footer-message{width:100%;text-align:center;}
+  .footer-message .pill{margin-inline:auto;}
+  .footer-main{align-items:center;}
+}
