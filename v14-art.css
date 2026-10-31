@@ -272,3 +272,66 @@
   .footer-message .pill{margin-inline:auto;}
   .footer-main{align-items:center;}
 }
+
+
+/* ==========================================================
+   PCB&T V17 — INNER-PAGE CTA LOGO / MOBILE ONLY
+   The home page is intentionally NOT affected.
+   Keep the original logo image and its original proportions.
+   ========================================================== */
+@media screen and (max-width: 767px) {
+  /* Center the real PCB&T logo above the CTA copy, rather than
+     positioning it against the right edge of the mobile viewport. */
+  body.innerpage .art-cta .authentic-cta-logo-inline {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    box-sizing: border-box;
+    width: 104px !important;
+    max-width: 104px;
+    height: auto !important;
+    margin: 0 auto 24px !important;
+    padding: 10px;
+    border-radius: 50%;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    object-fit: contain;
+  }
+  body.innerpage .art-cta .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  body.innerpage .art-cta .cta-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  body.innerpage .art-cta .cta-inner .overline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.innerpage .art-cta .cta-inner h2 {
+    text-align: center !important;
+    margin: 18px auto 30px !important;
+  }
+  body.innerpage .art-cta .cta-bottom {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  body.innerpage .art-cta .v14-cta-rays {
+    right: 50% !important;
+    top: -170px !important;
+    width: 340px;
+    margin-right: -170px;
+    opacity: .055;
+  }
+}
