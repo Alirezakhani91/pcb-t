@@ -1,0 +1,34 @@
+{
+  "version": "V10",
+  "hero_pages": 25,
+  "page_photo_map": {
+    "index": "assets/hero/index-hero.webp",
+    "about": "assets/hero/about-hero.webp",
+    "approach": "assets/hero/approach-hero.webp",
+    "bookkeeping-habits": "assets/hero/bookkeeping-habits-hero.webp",
+    "bookkeeping": "assets/hero/bookkeeping-hero.webp",
+    "cash-flow-clarity": "assets/hero/cash-flow-clarity-hero.webp",
+    "construction": "assets/hero/construction-hero.webp",
+    "contact": "assets/hero/contact-hero.webp",
+    "financial-reporting": "assets/hero/financial-reporting-hero.webp",
+    "forecasting": "assets/hero/forecasting-hero.webp",
+    "industries": "assets/hero/industries-hero.webp",
+    "insights": "assets/hero/insights-hero.webp",
+    "logistics": "assets/hero/logistics-hero.webp",
+    "nonprofits": "assets/hero/nonprofits-hero.webp",
+    "payroll": "assets/hero/payroll-hero.webp",
+    "privacy": "assets/hero/privacy-hero.webp",
+    "professional": "assets/hero/professional-hero.webp",
+    "property": "assets/hero/property-hero.webp",
+    "restaurants": "assets/hero/restaurants-hero.webp",
+    "retail": "assets/hero/retail-hero.webp",
+    "services": "assets/hero/services-hero.webp",
+    "specialized": "assets/hero/specialized-hero.webp",
+    "tax-support": "assets/hero/tax-support-hero.webp",
+    "tax-time-checklist": "assets/hero/tax-time-checklist-hero.webp",
+    "why-pcbt": "assets/hero/why-pcbt-hero.webp"
+  },
+  "home_extra_photos": [
+    "assets/home-difference.webp"
+  ]
+}
