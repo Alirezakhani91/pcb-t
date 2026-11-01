@@ -74,62 +74,62 @@
   const menuData = {
     services: {
       label: 'What we do',
-      intro: 'Core bookkeeping, reporting and tax support shaped for small business operations.',
+      intro: 'Bookkeeping, payroll records, tax preparation support and reporting tailored to the way your business operates.',
       cta: { href: 'services.html', label: 'Explore all services' },
       items: [
-        { href: 'bookkeeping.html', title: 'Bookkeeping & Reconciliation', desc: 'Reliable monthly bookkeeping and reconciliations.', image: 'bookkeeping-hero.webp' },
-        { href: 'tax-support.html', title: 'Tax Preparation & Support', desc: 'Organized records that make tax season smoother.', image: 'tax-support-hero.webp' },
-        { href: 'payroll.html', title: 'Payroll Management', desc: 'A practical payroll routine for your team.', image: 'payroll-hero.webp' },
-        { href: 'financial-reporting.html', title: 'Financial Reporting', desc: 'Reporting that helps you see the business clearly.', image: 'financial-reporting-hero.webp' },
-        { href: 'forecasting.html', title: 'Budgeting & Forecasting', desc: 'A more useful view of what comes next.', image: 'forecasting-hero.webp' },
-        { href: 'specialized.html', title: 'Specialized Accounting', desc: 'Support tailored to special requirements and sectors.', image: 'specialized-hero.webp' }
+        { href: 'bookkeeping.html', title: 'Bookkeeping & Reconciliation', desc: 'Transaction review, reconciliations and organized monthly records.', image: 'bookkeeping-hero.webp' },
+        { href: 'tax-support.html', title: 'Tax Preparation & Support', desc: 'GST/HST support records and orderly tax-time preparation.', image: 'tax-support-hero.webp' },
+        { href: 'payroll.html', title: 'Payroll Management', desc: 'Pay-period inputs, deduction records and organized payroll information.', image: 'payroll-hero.webp' },
+        { href: 'financial-reporting.html', title: 'Financial Reporting', desc: 'Performance summaries and meaningful period comparisons.', image: 'financial-reporting-hero.webp' },
+        { href: 'forecasting.html', title: 'Budgeting & Forecasting', desc: 'Budgets, assumptions and practical cash flow forecasts.', image: 'forecasting-hero.webp' },
+        { href: 'specialized.html', title: 'Specialized Accounting', desc: 'Adaptable records and reporting for specialized operations.', image: 'specialized-hero.webp' }
       ]
     },
     industries: {
       label: 'Who we serve',
-      intro: 'Every industry has its own rhythm. Our work is shaped around how that business actually runs.',
+      intro: 'From POS settlements to job costs and rental income, financial records need to reflect real operating conditions.',
       cta: { href: 'industries.html', label: 'See all industries' },
       items: [
-        { href: 'restaurants.html', title: 'Restaurants & Cafés', desc: 'For kitchen teams, cafés and hospitality businesses.', image: 'restaurants-hero.webp' },
-        { href: 'construction.html', title: 'Construction & Trades', desc: 'For contractors, builders and trade-based teams.', image: 'construction-hero.webp' },
-        { href: 'retail.html', title: 'Retail & Hardware', desc: 'For owner-operated retail and inventory-heavy stores.', image: 'retail-hero.webp' },
-        { href: 'property.html', title: 'Property & Rentals', desc: 'For landlords, property managers and rental operations.', image: 'property-hero.webp' },
-        { href: 'logistics.html', title: 'Moving & Logistics', desc: 'For warehousing, delivery and moving operations.', image: 'logistics-hero.webp' },
-        { href: 'professional.html', title: 'Professional Services', desc: 'For offices, consultancies and service-based firms.', image: 'professional-hero.webp' },
-        { href: 'nonprofits.html', title: 'Nonprofits', desc: 'For organizations serving the community with care.', image: 'nonprofits-hero.webp' }
+        { href: 'restaurants.html', title: 'Restaurants & Cafés', desc: 'Daily sales, deposits, supplier costs and hospitality expenses.', image: 'restaurants-hero.webp' },
+        { href: 'construction.html', title: 'Construction & Trades', desc: 'Job expenses, subcontractors, billing and cash timing.', image: 'construction-hero.webp' },
+        { href: 'retail.html', title: 'Retail & Hardware', desc: 'Sales settlement, inventory purchases and store costs.', image: 'retail-hero.webp' },
+        { href: 'property.html', title: 'Property & Rentals', desc: 'Rent collections, repairs and property-level recordkeeping.', image: 'property-hero.webp' },
+        { href: 'logistics.html', title: 'Moving & Logistics', desc: 'Customer billing, fuel, equipment and operating expenses.', image: 'logistics-hero.webp' },
+        { href: 'professional.html', title: 'Professional Services', desc: 'Client billing, contractor costs and spend visibility.', image: 'professional-hero.webp' },
+        { href: 'nonprofits.html', title: 'Nonprofits', desc: 'Program spending, donation records and stakeholder reporting.', image: 'nonprofits-hero.webp' }
       ]
     },
     approach: {
       label: 'Our approach',
-      intro: 'A simpler process designed to stay practical, human and easy to work with.',
+      intro: 'We assess the records you have, define a practical scope and agree on a routine for reviews and reporting.',
       cta: { href: 'approach.html', label: 'Learn how we work' },
       items: [
-        { href: 'approach.html', title: 'How we work', desc: 'A simpler way to work together.', image: 'approach-hero.webp' },
-        { href: 'why-pcbt.html', title: 'Why PCB&T', desc: 'What makes the relationship different.', image: 'why-pcbt-hero.webp' },
-        { href: 'about.html', title: 'About PCB&T', desc: 'A local team grounded in practical support.', image: 'about-hero.webp' },
-        { href: 'contact.html', title: 'Start a conversation', desc: 'Tell us what support would make the biggest difference.', image: 'contact-hero.webp' }
+        { href: 'approach.html', title: 'How we work', desc: 'Clear responsibilities, reconciliations and reporting routines.', image: 'approach-hero.webp' },
+        { href: 'why-pcbt.html', title: 'Why PCB&T', desc: 'The connection between careful records and clear business decisions.', image: 'why-pcbt-hero.webp' },
+        { href: 'about.html', title: 'About PCB&T', desc: 'Saint John roots and a thoughtful approach to the details.', image: 'about-hero.webp' },
+        { href: 'contact.html', title: 'Start a conversation', desc: 'Discuss your records, priorities and the scope of support you need.', image: 'contact-hero.webp' }
       ]
     },
     about: {
       label: 'About',
-      intro: 'Get a feel for the team, the philosophy and the way PCB&T works with local businesses.',
+      intro: 'Learn about our locally focused approach to record quality, clear communication and practical financial support.',
       cta: { href: 'about.html', label: 'More about PCB&T' },
       items: [
-        { href: 'about.html', title: 'About PCB&T', desc: 'A thoughtful bookkeeping and tax support partner.', image: 'about-hero.webp' },
-        { href: 'why-pcbt.html', title: 'Why PCB&T', desc: 'What clients value in the relationship.', image: 'why-pcbt-hero.webp' },
-        { href: 'privacy.html', title: 'Privacy', desc: 'How information is handled with care.', image: 'privacy-hero.webp' },
+        { href: 'about.html', title: 'About PCB&T', desc: 'Local bookkeeping and practical financial administration support.', image: 'about-hero.webp' },
+        { href: 'why-pcbt.html', title: 'Why PCB&T', desc: 'Technical care, informed context and communication.', image: 'why-pcbt-hero.webp' },
+        { href: 'privacy.html', title: 'Privacy', desc: 'Current website and enquiry information.', image: 'privacy-hero.webp' },
         { href: 'contact.html', title: 'Contact', desc: 'Ready to start a conversation?', image: 'contact-hero.webp' }
       ]
     },
     insights: {
       label: 'Insights',
-      intro: 'A small library of practical thinking around financial routines, clarity and tax-time readiness.',
+      intro: 'Guides on bookkeeping controls, cash flow and Canadian tax-time record preparation.',
       cta: { href: 'insights.html', label: 'Visit insights' },
       items: [
-        { href: 'bookkeeping-habits.html', title: 'Bookkeeping habits', desc: 'Small routines that reduce friction all year.', image: 'bookkeeping-habits-hero.webp' },
-        { href: 'cash-flow-clarity.html', title: 'Cash flow clarity', desc: 'See the business more clearly with better timing.', image: 'cash-flow-clarity-hero.webp' },
-        { href: 'tax-time-checklist.html', title: 'Tax-time checklist', desc: 'A calmer way to prepare for tax season.', image: 'tax-time-checklist-hero.webp' },
-        { href: 'insights.html', title: 'All insights', desc: 'Explore the editorial hub.', image: 'insights-hero.webp' }
+        { href: 'bookkeeping-habits.html', title: 'Bookkeeping habits', desc: 'Five habits for steadier bookkeeping and month-end close.', image: 'bookkeeping-habits-hero.webp' },
+        { href: 'cash-flow-clarity.html', title: 'Cash flow clarity', desc: 'Understand how profit and cash movement differ.', image: 'cash-flow-clarity-hero.webp' },
+        { href: 'tax-time-checklist.html', title: 'Tax-time checklist', desc: 'What to collect and reconcile ahead of Canadian tax time.', image: 'tax-time-checklist-hero.webp' },
+        { href: 'insights.html', title: 'All insights', desc: 'Practical articles for owners and operators.', image: 'insights-hero.webp' }
       ]
     }
   };
