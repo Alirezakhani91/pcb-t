@@ -51,7 +51,7 @@
 
   // Active top-level nav item
   const topMap = {
-    services: ['services.html', 'bookkeeping.html', 'tax-support.html', 'payroll.html', 'financial-reporting.html', 'forecasting.html', 'specialized.html'],
+    services: ['services.html', 'bookkeeping.html', 'tax-support.html', 'business-personal-taxes.html', 'payroll.html', 'financial-reporting.html', 'forecasting.html', 'specialized.html'],
     industries: ['industries.html', 'restaurants.html', 'construction.html', 'retail.html', 'property.html', 'logistics.html', 'professional.html', 'nonprofits.html'],
     approach: ['approach.html'],
     about: ['about.html', 'why-pcbt.html', 'contact.html', 'privacy.html'],
@@ -79,6 +79,7 @@
       items: [
         { href: 'bookkeeping.html', title: 'Bookkeeping & Reconciliation', desc: 'Transaction review, reconciliations and organized monthly records.', image: 'bookkeeping-hero.webp' },
         { href: 'tax-support.html', title: 'Tax Preparation & Support', desc: 'GST/HST support records and orderly tax-time preparation.', image: 'tax-support-hero.webp' },
+        { href: 'business-personal-taxes.html', title: 'Business & Personal Taxes', desc: 'Personal returns, self-employment and corporate tax support.', image: 'business-personal-taxes-hero.webp' },
         { href: 'payroll.html', title: 'Payroll Management', desc: 'Pay-period inputs, deduction records and organized payroll information.', image: 'payroll-hero.webp' },
         { href: 'financial-reporting.html', title: 'Financial Reporting', desc: 'Performance summaries and meaningful period comparisons.', image: 'financial-reporting-hero.webp' },
         { href: 'forecasting.html', title: 'Budgeting & Forecasting', desc: 'Budgets, assumptions and practical cash flow forecasts.', image: 'forecasting-hero.webp' },
@@ -295,6 +296,13 @@
     };
     updateHeaderState();
     window.addEventListener('scroll', updateHeaderState, { passive: true });
+  }
+
+  // Contact form: preselect service for visitors arriving from a specific service page.
+  const chosenService = new URLSearchParams(window.location.search).get('service');
+  const serviceSelect = document.querySelector('#contact-form select[name="service"]');
+  if (chosenService && serviceSelect && Array.from(serviceSelect.options).some(option => option.value === chosenService)) {
+    serviceSelect.value = chosenService;
   }
 
   // Contact form mailto

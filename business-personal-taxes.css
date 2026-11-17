@@ -1,0 +1,84 @@
+/* PCB&T V19 — Business & Personal Taxes. Additive, scoped styling; does not alter existing pages. */
+.taxes-page{--tax-ink:#10283a;--tax-teal:#20adb5;--tax-line:#cbd8d6;}
+.taxes-page .hero-biz-taxes>.hero-photo-media{object-position:50% 50%;}
+.taxes-page .hero-biz-taxes>.hero-photo-overlay{background:linear-gradient(90deg,rgba(4,24,33,.61) 0%,rgba(4,24,33,.25) 48%,rgba(4,24,33,.04) 100%),linear-gradient(0deg,rgba(4,24,33,.55),transparent 75%);}
+.taxes-page .page-hero h1{max-width:1050px;font-size:clamp(62px,6.4vw,104px);line-height:.98;}
+.taxes-page .tax-introduction{padding-top:clamp(85px,8vw,130px);padding-bottom:clamp(85px,8vw,130px);background:#fff;}
+.tax-intro-grid{display:grid;grid-template-columns:.62fr 1.38fr;gap:clamp(60px,8vw,150px);align-items:start;}
+.tax-intro-kicker{padding-top:16px;display:flex;flex-direction:column;align-items:flex-start;gap:30px;}
+.tax-intro-rule{display:block;width:55px;height:2px;background:var(--tiffany);}
+.tax-intro-content h2{font-size:clamp(52px,5.4vw,87px);margin:0 0 33px;max-width:850px;line-height:1.025;}
+.tax-intro-content p{font-size:clamp(18px,1.6vw,23px);max-width:770px;color:#5b6970;line-height:1.65;margin:0 0 34px;}
+.tax-coverage{background:#edf3f1;}
+.tax-coverage-head{display:flex;justify-content:space-between;gap:70px;align-items:end;margin-bottom:52px;}
+.tax-coverage-head h2{font-size:clamp(58px,6vw,96px);max-width:900px;margin:0;line-height:.99;}
+.tax-coverage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.tax-panel{padding:clamp(30px,4vw,65px);min-height:610px;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.tax-panel-personal{background:#fff;color:var(--navy);}
+.tax-panel-business{background:var(--navy);color:#fff;}
+.tax-panel-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font:700 12px/1.3 var(--serif);letter-spacing:.14em;}
+.tax-panel-mark{font-size:28px;font-weight:400;color:var(--tiffany);line-height:1;}
+.tax-panel h3{font-size:clamp(50px,5vw,80px);margin:40px 0 26px;line-height:1.02;letter-spacing:-.044em;}
+.tax-panel p{font-size:19px;line-height:1.58;max-width:540px;margin:0 0 30px;}
+.tax-panel-personal p{color:#52616a}.tax-panel-business p{color:#d3e0e1}
+.tax-panel ul{margin:auto 0 0;padding:22px 0 0;list-style:none;border-top:1px solid rgba(16,40,58,.16);}
+.tax-panel-business ul{border-color:rgba(255,255,255,.25)}
+.tax-panel li{position:relative;padding:11px 0 11px 26px;font-size:17px;line-height:1.45;}
+.tax-panel li:before{content:'–';position:absolute;left:0;color:var(--tiffany)}
+.tax-scope-note{font-size:15px;color:#556b70;margin:24px 0 0;max-width:850px;}
+.tax-detail{background:#fff;}
+.tax-detail-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,8vw,130px);align-items:start;}
+.tax-detail h2{font-size:clamp(49px,5.3vw,83px);max-width:640px;margin:28px 0;line-height:1.04;}
+.tax-detail-inner>div>p{color:#64737a;font-size:19px;max-width:410px;}
+.tax-detail-list{border-top:1px solid var(--tax-line);}
+.tax-detail-item{display:grid;grid-template-columns:50px 1fr;gap:26px;border-bottom:1px solid var(--tax-line);padding:28px 0;}
+.tax-detail-item>span{color:var(--tiffany);font-size:14px;padding-top:7px;}
+.tax-detail-item h3{font-size:clamp(29px,2.8vw,43px);margin:0 0 12px;}
+.tax-detail-item p{font-size:17px;line-height:1.6;color:#64737a;max-width:580px;margin:0;}
+.tax-steps{background:#f7f7f5;}
+.tax-steps-header{display:flex;justify-content:space-between;align-items:end;gap:60px;margin:24px 0 58px;}
+.tax-steps-header h2{font-size:clamp(49px,5.3vw,85px);max-width:880px;margin:0;}
+.tax-steps-header>p{max-width:310px;color:#66737a;font-size:19px;margin:0;}
+.tax-steps-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;}
+.tax-step{border-top:1px solid #10283a;padding:22px 4px 4px;transition:transform .25s ease,border-color .25s ease;}
+.tax-step:hover{transform:translateY(-6px);border-color:var(--tiffany);}
+.tax-step>span{font-size:14px;color:var(--tiffany);}
+.tax-step h3{font-size:clamp(29px,3vw,44px);margin:30px 0 16px;}
+.tax-step p{font-size:17px;color:#66737a;line-height:1.6;margin:0;}
+.tax-reference{background:#fff;border-block:1px solid #dae3e1;}
+.tax-reference-inner{padding:40px 0;display:grid;grid-template-columns:.55fr 1.45fr;gap:30px;align-items:center;}
+.tax-reference p{margin:0;font-size:clamp(19px,2vw,28px);line-height:1.35;}
+.tax-reference a{color:#008d98;text-decoration:underline;text-underline-offset:6px;}
+@media(max-width:850px){
+ .tax-intro-grid,.tax-detail-inner,.tax-reference-inner{grid-template-columns:1fr;gap:25px;}
+ .tax-coverage-head,.tax-steps-header{display:block;}
+ .tax-coverage-grid{grid-template-columns:1fr;}
+ .tax-panel{min-height:auto;}
+ .tax-steps-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:767px){
+ .taxes-page .page-hero h1{font-size:clamp(35px,9.2vw,51px);max-width:100%;text-align:center;}
+ .taxes-page .hero-biz-taxes>.hero-photo-media{object-position:61% 50%;}
+ .tax-intro-kicker{align-items:center;gap:17px;}
+ .tax-intro-content h2,.tax-coverage-head h2,.tax-detail h2,.tax-steps-header h2{font-size:clamp(33px,8.6vw,46px);text-align:center;margin:14px 0 22px;}
+ .tax-intro-content p,.tax-detail-inner>div>p,.tax-steps-header>p{font-size:16px;text-align:center;margin:0 auto 22px;}
+ .tax-intro-content{text-align:center;}
+ .tax-coverage-head{text-align:center;margin-bottom:28px;}
+ .tax-panel{padding:30px 24px;}
+ .tax-panel h3{font-size:clamp(42px,11vw,58px);margin:23px 0 20px;text-align:center;}
+ .tax-panel p{font-size:16px;text-align:center;}
+ .tax-panel li{font-size:15px;}
+ .tax-detail{text-align:center;}
+ .tax-detail-list{text-align:left;}
+ .tax-detail-item{grid-template-columns:30px 1fr;gap:10px;padding:23px 0;}
+ .tax-detail-item h3{font-size:25px;}
+ .tax-detail-item p{font-size:15px;}
+ .tax-steps{text-align:center;}
+ .tax-steps-grid{grid-template-columns:1fr;gap:20px;}
+ .tax-step h3{font-size:27px;margin:14px 0 8px;}
+ .tax-step p{font-size:15px;max-width:320px;margin:0 auto;}
+ .tax-reference-inner{text-align:center;}
+ .tax-reference p{font-size:18px;}
+ .tax-scope-note{font-size:13px;text-align:center;}
+}
+@media(prefers-reduced-motion:reduce){.tax-step{transition:none!important}}

@@ -1,0 +1,15 @@
+PCB&T — V19 | Business & Personal Taxes
+
+صفحه جدید: business-personal-taxes.html
+عکس مستقل: business-personal-taxes-hero.webp (تولید تصویری، نه عکس مستند)
+استایل مستقل صفحه: business-personal-taxes.css
+
+آپلود روی GitHub /pcb-t/:
+۱. فایل ZIP کوچک PATCH را Extract کنید.
+۲. تمام ۸ فایل داخل آن را در ریشه Repository جایگزین/اضافه کنید.
+۳. روی Commit changes بزنید؛ بعد صفحه business-personal-taxes.html را باز کنید.
+
+صفحه جدید از نمونه فرم contact.html?service=Business%20%26%20Personal%20Taxes استفاده می‌کند.
+فرم تماس همچنان فقط یک ایمیل آماده در برنامه ایمیل باز می‌کند؛ ارسال خودکار نیست.
+
+پیش از انتشار عمومی دامنه خدمات واقعی Business/Personal Taxes، از جمله T1، T2 و e-filing، با مسئول شرکت تأیید شود.
